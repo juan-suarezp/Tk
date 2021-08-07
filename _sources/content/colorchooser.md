@@ -50,10 +50,10 @@ if __name__ == '__main__':
 ```
 El resultado es el siguiente:
 
-![ventana colorchooser](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/ventanacolorchooser.png)
+![ventanacolorchooser](https://user-images.githubusercontent.com/58320351/128614244-86fcde5c-8e88-448d-ad1e-cb579d217c91.png)
  
 En este ejemplo se crea una clase para la interfaz, en la cual se define un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado al método `onChoose` y un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) que va a mostrar el color elegido, así:
 
-![funcion colorchooser](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/funcioncolorchooser.png)
+![funcioncolorchooser](https://user-images.githubusercontent.com/58320351/128614250-d55edfb5-7096-4d16-b183-5040da5f7b40.png)
 
 El método `onChoose` abre una ventana predeterminada de Tkinter que permite seleccionar un color. Esta ventana se abre con `tkinter.colorchooser.askcolor` y retorna el código del color en RGB y en hexadecimal. Luego con el código en hexadecimal configura el frame para mostrar el color seleccionado.
