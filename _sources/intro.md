@@ -14,8 +14,6 @@ ventana.mainloop()
 El resultado es el siguiente:
 
 ![ventana](https://user-images.githubusercontent.com/58320351/128613754-7121acb1-4fa8-4d74-a703-561d961e0652.png)
-<img src="logo.jpg" alt="Paseo marítimo de Cadaqués">
-
 
 Una aplicación solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. Es importante resaltar que, además de la `Tk` y las ventanas `Toplevel`, existen algunas ventanas predeterminadas como las de [Filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md) o las de [Messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md) y otros widgets como los [Frames](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md) y [Labelframes](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/labelframe.md) que sirven como contenedores de otros widgets.
 
