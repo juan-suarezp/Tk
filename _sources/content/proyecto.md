@@ -1,7 +1,11 @@
 # Ejemplo Proyecto
-En este ejemplo se crea una interfaz que permite seleccionar una carpeta para listar los [archivos .lis](https://github.com/juan-suarezp/PythonTkinterTutorial/tree/master/otros%20ejemplos/proyecto) (cir0, cir1 y cir2) que hay en ella. Finalmente, es posible seleccionar uno de estos archivos para graficar en la interfaz.
+En este ejemplo se crea una interfaz que permite seleccionar una carpeta para listar los archivos .lis ([cir0](https://github.com/juan-suarezp/Tk/blob/main/content/archivos/cir0.lis), [cir1](https://github.com/juan-suarezp/Tk/blob/main/content/archivos/cir1.lis) y [cir2](https://github.com/juan-suarezp/Tk/blob/main/content/archivos/cir2.lis)) que hay en ella. Finalmente, es posible seleccionar uno de estos archivos para graficar en la interfaz.
 
-`Nota:` Para descargar los archivos .lis, ingresar al archivo que quiere descargar. Dar click derecho al botón `Raw` y después "guardar como..." o "guardar enlace como...". Esto permite descargar los archivos.
+```{note}
+Para descargar los archivos .lis, ingresar al archivo que quiere descargar.
+Dar click derecho al botón `Raw` y después "guardar como..." o "guardar enlace como...".
+Esto permite descargar los archivos.
+```
 
 ![imagenarchivo](https://user-images.githubusercontent.com/58320351/128614717-6f8f147b-d663-4416-b958-b8e99d18a743.png)
 
