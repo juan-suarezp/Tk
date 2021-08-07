@@ -52,7 +52,7 @@ El resultado es el siguiente:
 
 ![ventanacolorchooser](https://user-images.githubusercontent.com/58320351/128614244-86fcde5c-8e88-448d-ad1e-cb579d217c91.png)
  
-En este ejemplo se crea una clase para la interfaz, en la cual se define un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado al método `onChoose` y un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) que va a mostrar el color elegido, así:
+En este ejemplo se crea una clase para la interfaz, en la cual se define un botón (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) que está conectado al método `onChoose` y un frame (ver [Tkinter Frame](https://juan-suarezp.github.io/Tk/content/frame.html)) que va a mostrar el color elegido, así:
 
 ![funcioncolorchooser](https://user-images.githubusercontent.com/58320351/128614250-d55edfb5-7096-4d16-b183-5040da5f7b40.png)
 
