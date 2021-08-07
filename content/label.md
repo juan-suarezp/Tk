@@ -40,7 +40,7 @@ El resultado es el siguiente:
 
 ![ventanalabel](https://user-images.githubusercontent.com/58320351/128614328-16f05772-83a3-403c-bbb2-7d7ed82cbb1c.png)
 
-En la `tk.Tk` se agregan dos labels y un botón. Uno de los label tiene un mensaje inicial que no tiene posibilidad de cambio, mientras el otro label cambia cada vez que se presiona el botón. La función `acción` está conectada con el botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) y al ser ejecutada realiza el cambio en el label como se observa a continuación:
+En la `tk.Tk` se agregan dos labels y un botón. Uno de los label tiene un mensaje inicial que no tiene posibilidad de cambio, mientras el otro label cambia cada vez que se presiona el botón. La función `acción` está conectada con el botón (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) y al ser ejecutada realiza el cambio en el label como se observa a continuación:
 
 ![funcionlabel](https://user-images.githubusercontent.com/58320351/128614332-e1ffa630-f642-403f-8323-f9db29de3f9a.png)
 
