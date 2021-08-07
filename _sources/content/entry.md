@@ -1,7 +1,7 @@
 # Tkinter Entry
 Es un widget que permite agregar una sola línea de texto al usuario.
-- Si quiere permitir agregar varias líneas de texto usar el widget [Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md).
-- Si quiere mostrar pero no permitir editar varias líneas de texto usar el widget [Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md) o [Message](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/message/message.md).
+- Si quiere permitir agregar varias líneas de texto usar el widget [Text](https://juan-suarezp.github.io/Tk/content/text.html).
+- Si quiere mostrar pero no permitir editar varias líneas de texto usar el widget [Label](https://juan-suarezp.github.io/Tk/content/label.html) o [Message](https://juan-suarezp.github.io/Tk/content/message.html).
 
 ## Ejemplo
 
@@ -45,7 +45,7 @@ El resultado es el siguiente:
 
 ![ventanaentry](https://user-images.githubusercontent.com/58320351/128614283-bf54be18-b56f-42ce-85a4-0d23de78be9c.png)
 
-El botón está conectado a la función `accion` (Ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), la cual comprueba si el texto en el label (Ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)) es igual al texto en el entry, mostrando en la terminal "correcto" o "incorrecto".
+El botón está conectado a la función `accion` (Ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)), la cual comprueba si el texto en el label (Ver [Tkinter Label](https://juan-suarezp.github.io/Tk/content/label.html)) es igual al texto en el entry, mostrando en la terminal "correcto" o "incorrecto".
 
 ![funcionentry](https://user-images.githubusercontent.com/58320351/128614288-a23ba426-1cb2-4814-a638-d8174bc1b1c3.png)
 
