@@ -38,10 +38,10 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana combobox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/combobox/ventanacombobox.png)
+![ventanacombobox](https://user-images.githubusercontent.com/58320351/128614265-f42fdb53-ea17-4800-9673-c0414374ce7b.png)
 
 El combobox permite seleccionar alguna de las opciones, el botón está conectado a la función `mostrar` (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que al ser ejecutada muestra en la terminal el elemento que está seleccionado en el combobox así:
 
-![funcion combobox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/combobox/funcioncombobox.png)
+![funcioncombobox](https://user-images.githubusercontent.com/58320351/128614267-4cdededd-0382-44fd-8fe2-3ff22ed67d79.png)
 
 En este ejemplo, después de crear la ventana principal `tk.Tk`, se crea la lista con los elementos que estarán en el menú. Luego se define el combobox, indicando el widget en el que estará con las opciones `values` y `state`; la primera permite ingresar la lista de opciones que mostrará el combobox y la última es para indicar si se permite o no ingresar más opciones de las que están en `values`.
