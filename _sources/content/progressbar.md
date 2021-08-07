@@ -31,7 +31,7 @@ El resultado es el siguiente:
 
 ![ventanaprogressbar](https://user-images.githubusercontent.com/58320351/128614498-838331dc-f9c8-4502-9c23-b7481f1be48b.png)
 
-El botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) está conectado con la función `aumentar`, la cual aumenta el 20% de la barra de progreso cada vez que es llamada. Esta es una manera simple de ver el funcionamiento del widget progressbar.
+El botón (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) está conectado con la función `aumentar`, la cual aumenta el 20% de la barra de progreso cada vez que es llamada. Esta es una manera simple de ver el funcionamiento del widget progressbar.
 
 ![funcionprogressbar](https://user-images.githubusercontent.com/58320351/128614505-6016a017-dc35-442c-aafd-cf2601d157b9.png)
 
