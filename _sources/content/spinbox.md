@@ -37,11 +37,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana spinbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/spinbox/ventanaspinbox.png)
+![ventanaspinbox](https://user-images.githubusercontent.com/58320351/128614591-de7f053d-72f9-4e67-9c4a-a92bfefd37fd.png)
 
 Se crea un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado a la función `mostrar`. La función muestra en la terminal el elemento que está seleccionado en el spinbox, así:
 
-![funcion spinbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/spinbox/funcionspinbox.png)
+![funcionspinbox](https://user-images.githubusercontent.com/58320351/128614597-e49440d1-15ae-40e1-be45-8c1a7fc1647e.png)
 
 Después de crear la `tk.Tk`, se define el spinbox, la función y el botón. Para el spinbox se define el widget que lo va a contener y las opciones `values` y `state`. `values` indica la lista de opciones que va a guardar el spinbox, por esto, en el ejemplo los elementos se ingresan con `lista.append` antes de definir el widget. `state` indica el estado del spinbox, es decir, si está desactivado, si solo se puede seleccionar entre las opciones o si se puede ingresar una opción por teclado.
 
