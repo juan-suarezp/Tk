@@ -49,13 +49,13 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana listbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/listbox/ventanalistbox.png)
+![ventanalistbox](https://user-images.githubusercontent.com/58320351/128614356-f96ffdd3-5301-4ea6-8f68-718faebaa5c8.png)
 
 Este ejemplo muestra cómo se puede ingresar elementos a la lista con `listbox.insert` y cómo se recupera el índice del (de los) elemento (s) seleccionado(s) con `listbox.curselection`.
 
 Se crea un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) para contener una barra de desplazamiento (ver [Tkinter Scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/scrollbar.md)) y una listbox. Además, se crea un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado a la función `mostrar`. La función muestra en la terminal los elementos que están seleccionados de la lista, así:
 
-![funcion listbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/listbox/funcionlistbox.png)
+![funcionlistbox](https://user-images.githubusercontent.com/58320351/128614361-806cb55d-2b6d-4850-b254-66b2330ddab7.png)
 
 Después de crear la `tk.Tk`, se define el frame, la barra de desplazamiento, la listbox, la función y el botón. Para la listbox se define que va a estar contenida en el frame, al igual que la barra de desplazamiento, además de las opciones `yscrollcommand` y `selectmode`. `yscrollcommand` se define como `scrollbar1.set` e indica la barra de desplazamiento para la listbox en el  eje y, en este caso `scrollbar1`. `selectmode` indica si es posible seleccionar una o varias opciones de la lista a la vez.
 
