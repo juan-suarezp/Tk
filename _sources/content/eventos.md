@@ -38,7 +38,7 @@ Ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana eventos](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/ventanaeventos.png)
+![ventanaeventos](https://user-images.githubusercontent.com/58320351/128614298-7df22811-ab49-413e-a2bf-d354210fe9a8.png)
 
 [Aquí](https://effbot.org/tkinterbook/tkinter-events-and-bindings.htm) para ver más eventos.
 
