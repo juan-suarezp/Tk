@@ -64,11 +64,11 @@ root.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/ventanamenu.png)
+![ventanamenu](https://user-images.githubusercontent.com/58320351/128614387-a98c2d83-eeae-4b8e-a1d0-f9a41b9ac40e.png)
 
 La función `donothing` se ejecuta al seleccionar cualquier opción del menú y muestra la siguiente ventana:
 
-![funcion menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/funcionmenu.png)
+![funcionmenu](https://user-images.githubusercontent.com/58320351/128614388-b4c5d0fb-713e-4df3-b425-eed9debeec30.png)
 
 El ejemplo muestra cómo agregar un menú a una ventana principal y cómo agregar pestañas a ese menú. Así mismo, muestra cómo agregar las opciones a cada pestaña.
 
