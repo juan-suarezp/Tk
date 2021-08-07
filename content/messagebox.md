@@ -58,10 +58,10 @@ if __name__ == '__main__':
 ```
 El resultado es el siguiente:
 
-![ventana messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/ventanamessagebox.png)
+![ventanamessagebox](https://user-images.githubusercontent.com/58320351/128614459-7a4b99dd-43ad-4acd-ad37-bd8b93582ae6.png)
 
 En este ejemplo se crea una clase para la interfaz, en la cual se definen cuatro botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), error, warning, question e inform; conectados a los métodos `Error`, `Warn`, `Quest` y `Info` respectivamente. Cada uno de estos métodos abre una ventana predeterminada de `tk.messagebox` diferente, así:
 
-![funcion messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/funcionmessagebox.png)
+![funcionmessagebox](https://user-images.githubusercontent.com/58320351/128614466-6972d909-f4c7-4adb-85f4-e9be949cde46.png)
 
 En cada uno de estos métodos, se define el título de la ventana y el mensaje que va a aparecer en la misma.
