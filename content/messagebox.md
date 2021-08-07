@@ -60,7 +60,7 @@ El resultado es el siguiente:
 
 ![ventanamessagebox](https://user-images.githubusercontent.com/58320351/128614459-7a4b99dd-43ad-4acd-ad37-bd8b93582ae6.png)
 
-En este ejemplo se crea una clase para la interfaz, en la cual se definen cuatro botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), error, warning, question e inform; conectados a los métodos `Error`, `Warn`, `Quest` y `Info` respectivamente. Cada uno de estos métodos abre una ventana predeterminada de `tk.messagebox` diferente, así:
+En este ejemplo se crea una clase para la interfaz, en la cual se definen cuatro botones (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)), error, warning, question e inform; conectados a los métodos `Error`, `Warn`, `Quest` y `Info` respectivamente. Cada uno de estos métodos abre una ventana predeterminada de `tk.messagebox` diferente, así:
 
 ![funcionmessagebox](https://user-images.githubusercontent.com/58320351/128614466-6972d909-f4c7-4adb-85f4-e9be949cde46.png)
 
