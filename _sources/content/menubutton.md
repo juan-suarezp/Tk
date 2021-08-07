@@ -44,11 +44,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana menubutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menubutton/ventanamenubutton.png)
+![ventanamenubutton](https://user-images.githubusercontent.com/58320351/128614403-a0e1c3f8-5288-4796-8c23-dc7816d26cde.png)
 
 Al seleccionar el botón, se despliega un menú como se observa en la siguiente imagen. Cada una de las tres opciones está conectada a una función; `New Window` está conectada a `fun1`, `Add Text` a `fun2` y `Salir...` a `ventana.detroy` que es un método predeterminado para cerrar la ventana principal.
 
-![funcion menubutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menubutton/funcionmenubutton.png)
+![funcionmenubutton](https://user-images.githubusercontent.com/58320351/128614406-59abf357-1b8a-4c37-87e8-62640f4b969c.png)
 
 Al principio se definen la `tk.Tk` y las funciones. Luego, se define el menubutton indicando la ventana que lo va a contener, el texto que va a mostrar y `relief` que modifica el aspecto o relieve del botón. Después, es necesario crear un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) para desplegar desde el menubutton. Para agregar las opciones se usa `mb.menu.add_command` al igual que con los Tkinter Menu.
 
