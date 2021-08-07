@@ -1,5 +1,3 @@
-## Este repositorio es una guía para los estudiantes de ingeniería eléctrica que están cursando algoritmos y programación/computación numérica en la Universidad de Antioquia.
-
 # Tkinter
 Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo [PyQt](https://github.com/juan-suarezp/PythonPyQtTutorial), sean más potentes que Tkinter.
 
@@ -95,35 +93,3 @@ ventana.mainloop()
 Este método tiene la ventaja de que permite ubicar exactamente donde se quiere los widgets, pero hay que tener cuidado con su tamaño. Cuando son muchos widgets se vuelve problemático ubicarlos todos.
 
 [Aquí](https://www.tutorialspoint.com/python/tk_place.htm) para ver más sobre el método place.
-
-## Widgets Tkinter
-Tkinter cuenta con un gran número de widgets, a continuación están listados los más usados (seleccionar para ver ejemplo de cada uno):
-- [Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)
-- [Canvas](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/canvas/canvas.md)
-- [Checkbutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/checkbutton.md)
-- [Colorchooser](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/colorchooser/colorchooser.md)
-- [Combobox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/combobox/combobox.md)
-- [Entry](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md)
-- [Filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md)
-- [Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)
-- [Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)
-- [Labelframe](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/labelframe.md)
-- [Listbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/listbox/listbox.md)
-- [Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)
-- [Menubutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menubutton/menubutton.md)
-- [Message](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/message/message.md)
-- [Messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md)
-- [Notebook](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/notebook/notebook.md)
-- [Panedwindow](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/panedwindow/panedwindow.md)
-- [Progressbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/progressbar/progressbar.md)
-- [Radiobutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/radiobutton/radiobutton.md)
-- [Scale](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scale/scale.md)
-- [Scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/scrollbar.md)
-- [Spinbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/spinbox/spinbox.md)
-- [Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)
-
-## Otros ejemplos
-- [Matplotlib](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/matplotlib/matplotlib.md)
-- [Eventos](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/eventos.md)
-- [Ejemplo Proyecto](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/proyecto/proyecto.md)
-- [Ejemplo Figura 3D](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/3D/3D.md)
