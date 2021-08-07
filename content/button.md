@@ -37,6 +37,6 @@ Al presionar el botón se ejecuta la función `accion` que abre la siguiente ven
 
 Esta es una ventana predeterminada de tkinter que permite cambiar el título y el mensaje que aparece en ella.
 
-La ventana principal se crea con `tk.Tk` y se cambia su tamaño con `ventana.geometry`. Luego, se crea el botón con `tk.Button` indicando el widget que lo va a contener, en nuestro caso `ventana`. En este ejemplo se usan las opciones `text` y `command`, la primera permite mostrar texto en el botón y la segunda permite conectar el botón con alguna función o método al ser presionado. Finalmente, se agrega el botón con `boton.place`; como se observa en el archivo [readme](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/README.md), es posible agregar el widget con los métodos `pack` o `grid` que están comentados en este ejemplo.
+La ventana principal se crea con `tk.Tk` y se cambia su tamaño con `ventana.geometry`. Luego, se crea el botón con `tk.Button` indicando el widget que lo va a contener, en nuestro caso `ventana`. En este ejemplo se usan las opciones `text` y `command`, la primera permite mostrar texto en el botón y la segunda permite conectar el botón con alguna función o método al ser presionado. Finalmente, se agrega el botón con `boton.place`; como se observa en [la introducción](https://juan-suarezp.github.io/Tk/intro.html), es posible agregar el widget con los métodos `pack` o `grid` que están comentados en este ejemplo.
 
 [Aquí](https://www.tutorialspoint.com/python3/tk_button.htm) para ver más opciones de Button.
