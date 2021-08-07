@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matplotlib &#8212; Tutorial de Tkinter</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Tutorial de Tkinter</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Tkinter
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="widgets.html">
+   Widgets Tkinter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="otros.html">
+   Otros ejemplos
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/matplotlib.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="matplotlib">
+<h1>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h1>
+<p>Este es un ejemplo que muestra cómo agregar gráficas de matplotlib a una GUI de tkinter.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Ejemplo de ventana con gráfica de matplotlib</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="c1"># Para trabajar con tkinter y matplotlib </span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_tkagg</span> <span class="kn">import</span> <span class="n">FigureCanvasTkAgg</span> <span class="k">as</span> <span class="n">FigureCanvas</span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_tkagg</span> <span class="kn">import</span> <span class="n">NavigationToolbar2Tk</span> <span class="k">as</span> <span class="n">Toolbar</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="kn">import</span> <span class="n">Figure</span>
+ 
+<span class="k">def</span> <span class="nf">make_plot</span><span class="p">():</span>
+    <span class="c1"># Se crea la señal</span>
+    <span class="n">Vp</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="n">var_ampl</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Voltios </span>
+    <span class="n">fre</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var_frec</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Hz</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">fre</span> <span class="c1"># rad/s</span>
+    <span class="n">fi</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var_fase</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># rad</span>
+
+    <span class="c1"># Función a graficar</span>
+    <span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Vp</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">t</span><span class="o">+</span><span class="n">fi</span><span class="p">)</span>
+
+    <span class="c1"># Listas con datos a graficar</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">ciclos</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Ciclos a graficar </span>
+    <span class="n">puntos</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Puntos por ciclo</span>
+    <span class="n">T</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">fre</span> <span class="c1"># Periodo </span>
+    <span class="n">deltat</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="n">puntos</span> <span class="c1"># Distancia entre puntos</span>
+
+    
+    <span class="n">ti</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Tiempo inicial</span>
+    <span class="c1"># Calculo las parejas de puntos    </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">puntos</span><span class="o">*</span><span class="n">ciclos</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ti</span><span class="p">)</span>
+        <span class="n">v</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f1</span><span class="p">(</span><span class="n">ti</span><span class="p">))</span>
+        <span class="n">ti</span> <span class="o">=</span> <span class="n">ti</span> <span class="o">+</span> <span class="n">deltat</span>
+
+    <span class="c1"># Se crean los objetos para mostrar la figura en tkinter</span>
+    <span class="c1"># Cada vez que se da clic al botón &quot;Graficar&quot;    </span>
+    <span class="c1"># Frame para la gráfica</span>
+    <span class="n">fr_grafica</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">ventana</span><span class="p">)</span> <span class="c1"># se crea un nuevo frame dentro de la ventana</span>
+    <span class="n">fr_grafica</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># se ubica el nuevo frame </span>
+    
+    <span class="n">figure</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="c1"># figura de matplotlib</span>
+    <span class="n">fig_canvas</span> <span class="o">=</span> <span class="n">FigureCanvas</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">fr_grafica</span><span class="p">)</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+    <span class="c1">#Configuración para que ocupe todo el espacio a lo ancho y alto</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">get_tk_widget</span><span class="p">()</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">_tkcanvas</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Barra de herramientas de la figura </span>
+    <span class="n">toolbar</span> <span class="o">=</span> <span class="n">Toolbar</span><span class="p">(</span><span class="n">fig_canvas</span><span class="p">,</span> <span class="n">fr_grafica</span><span class="p">)</span>
+    <span class="n">toolbar</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+    <span class="c1"># Grafico </span>
+    <span class="n">sub_figure</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+    <span class="n">sub_figure</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+
+
+
+<span class="c1"># Construcción de la ventana y sus controles</span>
+<span class="n">ventana</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span> <span class="c1">#Ventana principal</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Crear gráfica!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Frame para agregar los entry y el botón</span>
+<span class="n">fr_datos_entrada</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">ventana</span><span class="p">)</span> 
+<span class="n">fr_datos_entrada</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Amplitud</span>
+<span class="n">lbl_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Amplitud [V]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_ampl</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">var_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;100&#39;</span><span class="p">)</span>
+<span class="n">ent_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_ampl</span><span class="p">)</span>
+<span class="n">ent_ampl</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Frecuencia</span>
+<span class="n">lbl_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Frecuencia [Hz]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_frec</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">var_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;60&#39;</span><span class="p">)</span>
+<span class="n">ent_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_frec</span><span class="p">)</span>
+<span class="n">ent_frec</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Fase inicial</span>
+<span class="n">lbl_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Fase inical [rad]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_fase</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">var_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+<span class="n">ent_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_fase</span><span class="p">)</span>
+<span class="n">ent_fase</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Botón graficar</span>
+<span class="n">boton</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Graficar&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">make_plot</span><span class="p">)</span>
+<span class="n">boton</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Llamo la función donde creo el resto de objetos y calculo los puntos </span>
+<span class="n">make_plot</span><span class="p">()</span>
+
+<span class="c1"># Opcional</span>
+<span class="c1"># Para mantener la ventana de un tamaño fijo</span>
+<span class="c1"># Fuente: https://stackoverflow.com/questions/10448882/how-do-i-set-a-minimum-window-size-in-tkinter</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">minsize</span><span class="p">(</span><span class="n">ventana</span><span class="o">.</span><span class="n">winfo_width</span><span class="p">(),</span> <span class="n">ventana</span><span class="o">.</span><span class="n">winfo_height</span><span class="p">())</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">maxsize</span><span class="p">(</span><span class="n">ventana</span><span class="o">.</span><span class="n">winfo_width</span><span class="p">(),</span> <span class="n">ventana</span><span class="o">.</span><span class="n">winfo_height</span><span class="p">())</span>
+
+<span class="c1"># Ejecuto la aplicación</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>El resultado es el siguiente:</p>
+<p><img alt="ventana matplotlib" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/matplotlib/ventanamatplotlib.png" /></p>
+<p>La ventana permite ingresar la amplitud en V, la frecuencia en Hz y la fase inicial en Rad. Al llenar todos los campos, con el botón graficar se actualiza la gráfica con los parámetros actuales ingresados.</p>
+<p>A continuación se explica el código por partes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="nn">tk</span>
+<span class="c1"># Para trabajar con tkinter y matplotlib </span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_tkagg</span> <span class="kn">import</span> <span class="n">FigureCanvasTkAgg</span> <span class="k">as</span> <span class="n">FigureCanvas</span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_tkagg</span> <span class="kn">import</span> <span class="n">NavigationToolbar2Tk</span> <span class="k">as</span> <span class="n">Toolbar</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="kn">import</span> <span class="n">Figure</span>
+</pre></div>
+</div>
+<p>Aquí se importan los módulos necesarios como math y tkinter. Los últimos tres son necesarios para agregar la gráfica a la interfaz.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_plot</span><span class="p">():</span>
+    <span class="c1"># Se crea la señal</span>
+    <span class="n">Vp</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="n">var_ampl</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Voltios </span>
+    <span class="n">fre</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var_frec</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># Hz</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">fre</span> <span class="c1"># rad/s</span>
+    <span class="n">fi</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var_fase</span><span class="o">.</span><span class="n">get</span><span class="p">())</span> <span class="c1"># rad</span>
+
+    <span class="c1"># Función a graficar</span>
+    <span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Vp</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">t</span><span class="o">+</span><span class="n">fi</span><span class="p">)</span>
+
+    <span class="c1"># Listas con datos a graficar</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">ciclos</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Ciclos a graficar </span>
+    <span class="n">puntos</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Puntos por ciclo</span>
+    <span class="n">T</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">fre</span> <span class="c1"># Periodo </span>
+    <span class="n">deltat</span> <span class="o">=</span> <span class="n">T</span> <span class="o">/</span> <span class="n">puntos</span> <span class="c1"># Distancia entre puntos</span>
+
+    
+    <span class="n">ti</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Tiempo inicial</span>
+    <span class="c1"># Calculo las parejas de puntos    </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">puntos</span><span class="o">*</span><span class="n">ciclos</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ti</span><span class="p">)</span>
+        <span class="n">v</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f1</span><span class="p">(</span><span class="n">ti</span><span class="p">))</span>
+        <span class="n">ti</span> <span class="o">=</span> <span class="n">ti</span> <span class="o">+</span> <span class="n">deltat</span>
+
+    <span class="c1"># Se crean los objetos para mostrar la figura en tkinter</span>
+    <span class="c1"># Cada vez que se da clic al botón &quot;Graficar&quot;    </span>
+    <span class="c1"># Frame para la gráfica</span>
+    <span class="n">fr_grafica</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">ventana</span><span class="p">)</span> <span class="c1"># se crea un nuevo frame dentro de la ventana</span>
+    <span class="n">fr_grafica</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># se ubica el nuevo frame </span>
+    
+    <span class="n">figure</span> <span class="o">=</span> <span class="n">Figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="c1"># figura de matplotlib</span>
+    <span class="n">fig_canvas</span> <span class="o">=</span> <span class="n">FigureCanvas</span><span class="p">(</span><span class="n">figure</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">fr_grafica</span><span class="p">)</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+    <span class="c1">#Configuración para que ocupe todo el espacio a lo ancho y alto</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">get_tk_widget</span><span class="p">()</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">fig_canvas</span><span class="o">.</span><span class="n">_tkcanvas</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">TOP</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Barra de herramientas de la figura </span>
+    <span class="n">toolbar</span> <span class="o">=</span> <span class="n">Toolbar</span><span class="p">(</span><span class="n">fig_canvas</span><span class="p">,</span> <span class="n">fr_grafica</span><span class="p">)</span>
+    <span class="n">toolbar</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+    <span class="c1"># Grafico </span>
+    <span class="n">sub_figure</span> <span class="o">=</span> <span class="n">figure</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+    <span class="n">sub_figure</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Como su nombre <code class="docutils literal notranslate"><span class="pre">make_plot</span></code> lo indica, se define una función que crea la gráfica y la agrega a la interfaz. La función no tiene parámetros de entrada debido a que las variables para graficar las obtiene a partir de los valores ingresados en los entry (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md">Tkinter Entry</a>). Esto se hace en las primeras líneas de la función, por ejemplo para <code class="docutils literal notranslate"><span class="pre">Vp</span></code>, por medio de <code class="docutils literal notranslate"><span class="pre">float(var_ampl.get())</span></code> se obtiene el valor de la amplitud ingresado en el entry correspondiente de la interfaz. Así mismo para la frecuencia <code class="docutils literal notranslate"><span class="pre">fre</span></code> y la fase inicial <code class="docutils literal notranslate"><span class="pre">fi</span></code>.</p>
+<p>Con los tres valores obtenidos de los entry, es posible hallar las listas de tiempo y tensión; para esto se define la función <code class="docutils literal notranslate"><span class="pre">f1</span></code> que retorna la función sinusoidal, la cantidad de ciclos a gráficar, el número de puntos por ciclo y el periodo, para finalmente hallar la separación entre puntos. Con esta información y la función <code class="docutils literal notranslate"><span class="pre">f1</span></code> se llenan las listas de tiempo y tensión que se van a graficar.</p>
+<p>Finalmente, se crea un objeto tipo figura de matplotlib y un frame (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md">Tkinter Frame</a>) que servirá como widget para agregar la gráfica a la interfaz. Luego se crea un objeto tipo FigureCanvas que usa los dos objetos anteriores para crear y agregar la gráfica a la interfaz. Finalmente, se crea y se agrega también una barra de herramientas <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>.</p>
+<p>Cabe resaltar que se crea una “subfigura” del objeto tipo figura de matplotlib y finalmente es en este objeto que se ejecuta el comando <code class="docutils literal notranslate"><span class="pre">plot(t,v)</span></code> y demás cambios que se quieran realizar a la gráfica, como por ejemplo cambiar el título, los títulos de los ejes, etc.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construcción de la ventana y sus controles</span>
+<span class="n">ventana</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span> <span class="c1">#Ventana principal</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Crear gráfica!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Frame para agregar los entry y el botón</span>
+<span class="n">fr_datos_entrada</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">ventana</span><span class="p">)</span> 
+<span class="n">fr_datos_entrada</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Amplitud</span>
+<span class="n">lbl_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Amplitud [V]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_ampl</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">var_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;100&#39;</span><span class="p">)</span>
+<span class="n">ent_ampl</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_ampl</span><span class="p">)</span>
+<span class="n">ent_ampl</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Frecuencia</span>
+<span class="n">lbl_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Frecuencia [Hz]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_frec</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">var_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;60&#39;</span><span class="p">)</span>
+<span class="n">ent_frec</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_frec</span><span class="p">)</span>
+<span class="n">ent_frec</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Fase inicial</span>
+<span class="n">lbl_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Fase inical [rad]: &quot;</span><span class="p">)</span>
+<span class="n">lbl_fase</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">var_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">StringVar</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+<span class="n">ent_fase</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">textvariable</span> <span class="o">=</span> <span class="n">var_fase</span><span class="p">)</span>
+<span class="n">ent_fase</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Botón graficar</span>
+<span class="n">boton</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">fr_datos_entrada</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Graficar&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">make_plot</span><span class="p">)</span>
+<span class="n">boton</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Llamo la función donde creo el resto de objetos y calculo los puntos </span>
+<span class="n">make_plot</span><span class="p">()</span>
+
+<span class="c1"># Opcional</span>
+<span class="c1"># Para mantener la ventana de un tamaño fijo</span>
+<span class="c1"># Fuente: https://stackoverflow.com/questions/10448882/how-do-i-set-a-minimum-window-size-in-tkinter</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">minsize</span><span class="p">(</span><span class="n">ventana</span><span class="o">.</span><span class="n">winfo_width</span><span class="p">(),</span> <span class="n">ventana</span><span class="o">.</span><span class="n">winfo_height</span><span class="p">())</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">maxsize</span><span class="p">(</span><span class="n">ventana</span><span class="o">.</span><span class="n">winfo_width</span><span class="p">(),</span> <span class="n">ventana</span><span class="o">.</span><span class="n">winfo_height</span><span class="p">())</span>
+
+<span class="c1"># Ejecuto la aplicación</span>
+<span class="n">ventana</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>En el final del código se define la ventana principal y los widgets que están en ella. Se usan widgets como label (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md">Tkinter Label</a>), entry (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/entry.md">Tkinter Entry</a>), button (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md">Tkinter Button</a>) y frame (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md">Tkinter Frame</a>).</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Juan Esteban Suarez / Ingeniería eléctrica / Universidad de Antioquia<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
