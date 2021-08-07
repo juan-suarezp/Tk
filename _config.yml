@@ -10,7 +10,7 @@ author: Juan Esteban Suarez / Universidad de Antioquia / Ingeniería eléctrica
 logo: UdeA.png
 
 repository:
-   url: https://github.com/juan-suarezp/PythonTkinterTutorial
+   url: https://github.com/juan-suarezp/Tk
    branch: master
 
 launch_buttons:
