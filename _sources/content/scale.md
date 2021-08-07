@@ -37,11 +37,11 @@ root.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana scale](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scale/ventanascale.png)
+![ventanascale](https://user-images.githubusercontent.com/58320351/128614554-ebe2c0b8-c07d-4cb1-99eb-d10152a489b1.png)
 
 El botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) está conectado a la función `sel`, la cual muestra el valor del scale en un label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)) y cambia el tamaño de la ventana principal a un cuadrado de lado igual al valor del scale, como se muestra a continuación:
 
-![funcion scale](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scale/funcionscale.png)
+![funcionscale](https://user-images.githubusercontent.com/58320351/128614556-d53d526c-a04c-44a1-952c-8e8dd00ddf2b.png)
 
 Después de definir la función y la `tk.Tk`, se define el scale, el botón y el label. Para el scale, además de indicar el widget que lo va a contener, se indican las opciones `variable`, `to` y `from_`. `variable` indica donde se va a guardar el valor del scale, las otras dos opciones indican los límites del scale.
 
