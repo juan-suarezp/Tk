@@ -68,7 +68,7 @@ El resultado es el siguiente:
 
 ![ventanafiledialog](https://user-images.githubusercontent.com/58320351/128614311-8ced5707-f186-4bfd-9172-f8e84ea15caf.png)
 
-En este ejemplo se crea una clase para la interfaz, en la cual se define un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) con una sola opción que está conectada al método `Abrir` y un text (ver [Tkinter Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)) en el que se mostrará la ruta y el texto que contiene el archivo seleccionado. Por ejemplo, si se selecciona el archivo .py del ejemplo el resultado es el siguiente:
+En este ejemplo se crea una clase para la interfaz, en la cual se define un menú (ver [Tkinter Menu](https://juan-suarezp.github.io/Tk/content/menu.html)) con una sola opción que está conectada al método `Abrir` y un text (ver [Tkinter Text](https://juan-suarezp.github.io/Tk/content/text.html)) en el que se mostrará la ruta y el texto que contiene el archivo seleccionado. Por ejemplo, si se selecciona el archivo .py del ejemplo el resultado es el siguiente:
 
 ![funcionfiledialog](https://user-images.githubusercontent.com/58320351/128614312-97318e94-5aad-45d0-92bd-acb3575e9d09.png)
 
