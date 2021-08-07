@@ -40,7 +40,7 @@ El resultado es el siguiente:
 
 ![ventanacombobox](https://user-images.githubusercontent.com/58320351/128614265-f42fdb53-ea17-4800-9673-c0414374ce7b.png)
 
-El combobox permite seleccionar alguna de las opciones, el botón está conectado a la función `mostrar` (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que al ser ejecutada muestra en la terminal el elemento que está seleccionado en el combobox así:
+El combobox permite seleccionar alguna de las opciones, el botón está conectado a la función `mostrar` (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) que al ser ejecutada muestra en la terminal el elemento que está seleccionado en el combobox así:
 
 ![funcioncombobox](https://user-images.githubusercontent.com/58320351/128614267-4cdededd-0382-44fd-8fe2-3ff22ed67d79.png)
 
