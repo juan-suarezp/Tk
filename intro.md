@@ -13,7 +13,8 @@ ventana.mainloop()
 
 El resultado es el siguiente:
 
-![Ventana Tkinter](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventana.png)
+![ventana](https://user-images.githubusercontent.com/58320351/128613754-7121acb1-4fa8-4d74-a703-561d961e0652.png)
+
 
 Una aplicación solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. Es importante resaltar que, además de la `Tk` y las ventanas `Toplevel`, existen algunas ventanas predeterminadas como las de [Filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md) o las de [Messagebox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md) y otros widgets como los [Frames](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md) y [Labelframes](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/labelframe.md) que sirven como contenedores de otros widgets.
 
@@ -38,7 +39,8 @@ boton4.pack(side="bottom")
 
 ventana.mainloop()
 ```
-![ventana botones pack](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanapack.png)
+![ventanapack](https://user-images.githubusercontent.com/58320351/128613760-e41cec97-9c6c-438e-81d5-5a7886e6af01.png)
+
 
 Se puede observar que se respeta el orden en que se "empacan" los widgets. Esto se observa claramente con los botones 1 y 2, los cuales tienen `side = "top"`, como el botón 1 está primero, se respeta y queda sobre el botón 2 que después queda sobre los widgets que se ubiquen después. Es un método muy útil cuando se va a crear una aplicación con pocos widgets.
 
@@ -63,7 +65,7 @@ boton4.grid(row=3, column=3)
 
 ventana.mainloop()
 ```
-![ventana botones grid](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanagrid.png)
+![ventanagrid](https://user-images.githubusercontent.com/58320351/128613762-43fd36e9-fc90-4b16-92e2-1537ae146f05.png)
 
 Este método permite ubicar los widgets indicando la fila y la columna. Por defecto, el tamaño de las filas y columnas está dado por los widgets que estén ubicados en ellas, pero es posible cambiar el tamaño y combinar filas o columnas. Este método es muy útil cuando las aplicaciones contienen muchos widgets.
 
@@ -88,7 +90,7 @@ boton4.place(x=0, y=100)
 
 ventana.mainloop()
 ```
-![ventana botones place](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanaplace.png)
+![ventanaplace](https://user-images.githubusercontent.com/58320351/128613764-209a56e3-cf08-4292-b955-f96c99c6ae66.png)
 
 Este método tiene la ventaja de que permite ubicar exactamente donde se quiere los widgets, pero hay que tener cuidado con su tamaño. Cuando son muchos widgets se vuelve problemático ubicarlos todos.
 
