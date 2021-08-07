@@ -38,11 +38,11 @@ ventana.mainloop()
 ```
 el resultado es el siguiente:
 
-![ventana message](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/message/ventanamessage.png)
+![ventanamessage](https://user-images.githubusercontent.com/58320351/128614435-313a5166-a130-4076-bcfe-6e461e685efd.png)
 
 En la `tk.Tk` se agregan dos messages y un botón. Uno de los message tiene un mensaje inicial que no tiene posibilidad de cambio, mientras el otro message cambia cada vez que se presiona el botón. La función `acción` está conectada con el botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) y al ser ejecutada realiza el cambio en el message como se observa a continuación:
 
-![funcion message](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/message/funcionmessage.png)
+![funcionmessage](https://user-images.githubusercontent.com/58320351/128614438-488db0be-f35d-4aa4-9b7c-66513f4c4067.png)
 
 Al definir los message, se indica el widget que los va a contener y el texto para mostrar al inicio. Si se desea cambiar el texto que hay en un message, se define `textvariable` que guarda el texto que hay en el message en una variable. Con esta variable se tiene la posibilidad de recuperar el texto que contiene (`variable.get`) o cambiarlo (`variable.set`).
 
