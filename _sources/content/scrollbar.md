@@ -49,13 +49,13 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/ventanascrollbar.png)
+![ventanascrollbar](https://user-images.githubusercontent.com/58320351/128614572-b3a8f378-b765-4215-8e06-b9199af9d08a.png)
 
 Este ejemplo muestra cómo configurar la scrollbar para mover hacia arriba o abajo un widget, en este caso, una listbox.
 
 Se crea un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) para contener una scrollbar y una listbox (ver [Tkinter Listbox](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/listbox/listbox.md)). Además, se crea un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado a la función `mostrar`. La función muestra en la terminal los elementos que están seleccionados de la lista, así:
 
-![funcion scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/funcionscrollbar.png)
+![funcionscrollbar](https://user-images.githubusercontent.com/58320351/128614576-ee4eabac-484b-446d-8317-a3f82f1a4f0b.png)
 
 Después de crear la `tk.Tk`, se define el frame, la scrollbar, la listbox, la función y el botón. Para la scrollbar se indica el widget que la va a contener y `orient` que define la orientación de la barra. Al momento de definir la listbox se debe indicar `yscrollcommand=scrollbar1.set` y con `scrollbar1.config(command=listbox.yview)` (notar que ambos son en el eje y) se configura para que la scrollbar funcione en la listbox.
 

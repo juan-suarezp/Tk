@@ -386,10 +386,10 @@
 </pre></div>
 </div>
 <p>El resultado es el siguiente:</p>
-<p><img alt="ventana scrollbar" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/ventanascrollbar.png" /></p>
+<p><img alt="ventanascrollbar" src="https://user-images.githubusercontent.com/58320351/128614572-b3a8f378-b765-4215-8e06-b9199af9d08a.png" /></p>
 <p>Este ejemplo muestra cómo configurar la scrollbar para mover hacia arriba o abajo un widget, en este caso, una listbox.</p>
 <p>Se crea un frame (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md">Tkinter Frame</a>) para contener una scrollbar y una listbox (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/listbox/listbox.md">Tkinter Listbox</a>). Además, se crea un botón (ver <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md">Tkinter Button</a>) que está conectado a la función <code class="docutils literal notranslate"><span class="pre">mostrar</span></code>. La función muestra en la terminal los elementos que están seleccionados de la lista, así:</p>
-<p><img alt="funcion scrollbar" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/funcionscrollbar.png" /></p>
+<p><img alt="funcionscrollbar" src="https://user-images.githubusercontent.com/58320351/128614576-ee4eabac-484b-446d-8317-a3f82f1a4f0b.png" /></p>
 <p>Después de crear la <code class="docutils literal notranslate"><span class="pre">tk.Tk</span></code>, se define el frame, la scrollbar, la listbox, la función y el botón. Para la scrollbar se indica el widget que la va a contener y <code class="docutils literal notranslate"><span class="pre">orient</span></code> que define la orientación de la barra. Al momento de definir la listbox se debe indicar <code class="docutils literal notranslate"><span class="pre">yscrollcommand=scrollbar1.set</span></code> y con <code class="docutils literal notranslate"><span class="pre">scrollbar1.config(command=listbox.yview)</span></code> (notar que ambos son en el eje y) se configura para que la scrollbar funcione en la listbox.</p>
 <p><a class="reference external" href="https://www.tutorialspoint.com/python3/tk_scrollbar.htm">Aquí</a> para ver más opciones de Scrollbar.</p>
 </div>
