@@ -1,5 +1,5 @@
 # Tkinter Labelframe
-El labelframe es un widget que permite agregar otros widgets dentro de él al igual que los frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)). Además, permite mostrar texto como los label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)).
+El labelframe es un widget que permite agregar otros widgets dentro de él al igual que los frame (ver [Tkinter Frame](https://juan-suarezp.github.io/Tk/content/frame.html)). Además, permite mostrar texto como los label (ver [Tkinter Label](https://juan-suarezp.github.io/Tk/content/label.html)).
 
 ## Ejemplo
 
