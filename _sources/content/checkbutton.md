@@ -46,11 +46,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana checkbutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/ventanacheckbutton.png)
+![ventanacheckbutton](https://user-images.githubusercontent.com/58320351/128614230-78fc995a-1268-4f10-88a0-d24836a3c4a4.png)
 
 El botón está conectado a la función `accion` (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), al igual que los checkbutton al cambiar de estado. La función muestra en la terminal el estado actual de los dos checkbutton como se observa a continuación:
 
-![funcion checkbutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/checkbutton/funcioncheckbutton.png)
+![funcioncheckbutton](https://user-images.githubusercontent.com/58320351/128614232-3ce1502f-e4cb-41b4-bc05-1416f545e194.png)
 
 Después de crear la `tk.Tk` se define la función y los checkbutton. Para los checkbutton además de definir el widget que los va a contener, en este caso `ventana`, se definen las opciones `variable`, `text`, `command`, `height` y `width`. Las dos últimas definen el tamaño del chekbutton, `variable` guarda el estado actual del checkbutton `True` o `False`, `text` es el texto que acompaña el botón de activación y `command` permite llamar una función cuando cambia el estado del checkbutton.
 
