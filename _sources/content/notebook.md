@@ -32,11 +32,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana notebook](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/notebook/ventananotebook.png)
+![ventananotebook](https://user-images.githubusercontent.com/58320351/128614475-1aff7d71-d5b3-40cf-9122-2ce69250ab8c.png)
 
 Al seleccionar la otra pestaña se muestra la otra ventana como sigue:
 
-![cambio notebook](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/notebook/cambionotebook.png)
+![cambionotebook](https://user-images.githubusercontent.com/58320351/128614481-601d1f8e-a062-40a7-b861-dd1cef4cc638.png)
 
 Después de definir la `tk.Tk`, se define el notebook indicando el widget que lo va a contener. Luego, se definen los label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)) indicando que estarán en el notebook. Finalmente, se agregan las pestañas al notebook con `notebook.add` indicando el widget que va a estar en la pestaña; en este caso, un label para cada pestaña.
 
