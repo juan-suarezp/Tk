@@ -29,11 +29,11 @@ ventana.mainloop()
 
 El resultado es el siguiente:
 
-![ventana button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/ventanabutton.png)
+![ventanabutton](https://user-images.githubusercontent.com/58320351/128614186-ca0d95d7-85de-4585-9138-4eebb66192d8.png)
 
 Al presionar el botón se ejecuta la función `accion` que abre la siguiente ventana:
 
-![ventana mensaje](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/mensajebutton.png)
+![mensajebutton](https://user-images.githubusercontent.com/58320351/128614188-9c603013-9a33-4c2f-9c56-c53833049e11.png)
 
 Esta es una ventana predeterminada de tkinter que permite cambiar el título y el mensaje que aparece en ella.
 
