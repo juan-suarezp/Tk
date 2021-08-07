@@ -45,11 +45,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana panedwindow](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/panedwindow/ventanapanedwindow.png)
+![ventanapanedwindow](https://user-images.githubusercontent.com/58320351/128614488-19a3ac4b-0d2c-4438-96b5-af4a71416063.png)
 
 Al mover los separadores de los widgets cambia el tamaño así:
 
-![cambio panedwindow](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/panedwindow/cambiopanedwindow.png)
+![cambiopanedwindow](https://user-images.githubusercontent.com/58320351/128614492-3ac5aee3-fe5f-43e2-998b-0a5bba3b4f2e.png)
 
 Primero se define la `tk.Tk`, luego se define el panedwindow indicando su orientación. Después, se definen algunos widgets cualquiera para agregar al panedwindow con `pw.add`. Finalmente, se agrega el panedwindow con `pack` y se configura `sashrelief` que modifica el aspecto de los separadores del panedwindow.
 
