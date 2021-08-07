@@ -53,7 +53,7 @@ El resultado es el siguiente:
 
 Este ejemplo muestra cómo se puede ingresar elementos a la lista con `listbox.insert` y cómo se recupera el índice del (de los) elemento (s) seleccionado(s) con `listbox.curselection`.
 
-Se crea un frame (ver [Tkinter Frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md)) para contener una barra de desplazamiento (ver [Tkinter Scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/scrollbar.md)) y una listbox. Además, se crea un botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) que está conectado a la función `mostrar`. La función muestra en la terminal los elementos que están seleccionados de la lista, así:
+Se crea un frame (ver [Tkinter Frame](https://juan-suarezp.github.io/Tk/content/frame.html)) para contener una barra de desplazamiento (ver [Tkinter Scrollbar](https://juan-suarezp.github.io/Tk/content/scrollbar.html)) y una listbox. Además, se crea un botón (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) que está conectado a la función `mostrar`. La función muestra en la terminal los elementos que están seleccionados de la lista, así:
 
 ![funcionlistbox](https://user-images.githubusercontent.com/58320351/128614361-806cb55d-2b6d-4850-b254-66b2330ddab7.png)
 
