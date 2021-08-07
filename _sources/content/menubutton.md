@@ -1,5 +1,5 @@
 # Tkinter Menubutton
-Permite agregar un botón que despliega un menú parecido a las pestañas que se crean con [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md).
+Permite agregar un botón que despliega un menú parecido a las pestañas que se crean con [Tkinter Menu](https://juan-suarezp.github.io/Tk/content/menu.html).
 
 ## Ejemplo
 
@@ -50,6 +50,6 @@ Al seleccionar el botón, se despliega un menú como se observa en la siguiente 
 
 ![funcionmenubutton](https://user-images.githubusercontent.com/58320351/128614406-59abf357-1b8a-4c37-87e8-62640f4b969c.png)
 
-Al principio se definen la `tk.Tk` y las funciones. Luego, se define el menubutton indicando la ventana que lo va a contener, el texto que va a mostrar y `relief` que modifica el aspecto o relieve del botón. Después, es necesario crear un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) para desplegar desde el menubutton. Para agregar las opciones se usa `mb.menu.add_command` al igual que con los Tkinter Menu.
+Al principio se definen la `tk.Tk` y las funciones. Luego, se define el menubutton indicando la ventana que lo va a contener, el texto que va a mostrar y `relief` que modifica el aspecto o relieve del botón. Después, es necesario crear un menú (ver [Tkinter Menu](https://juan-suarezp.github.io/Tk/content/menu.html)) para desplegar desde el menubutton. Para agregar las opciones se usa `mb.menu.add_command` al igual que con los Tkinter Menu.
 
 [Aquí](https://www.tutorialspoint.com/python3/tk_menubutton.htm) para ver más opciones de Menubutton.
