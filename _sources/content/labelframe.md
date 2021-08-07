@@ -40,7 +40,7 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana labelframe](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/ventanalabelframe.png)
+![ventanalabelframe](https://user-images.githubusercontent.com/58320351/128614343-1cf0238a-d144-4029-92cc-73b2a84b71d1.png)
 
 En este ejemplo se crea la tk.Tk y se agregan dos labelframes indicando el widget que los va a contener, dentro del primer labelframe se agregan tres botones y en el segundo labelframe se agrega solo uno. Lo más importante en este ejemplo es que al definir los botones se indica que van a estar en el labelframe y no en la tk.Tk. También, se debe resaltar que los tres mecanismos para gestionar la geometría de los widgets funcionan para ubicarlos dentro de los labelframes.
 
