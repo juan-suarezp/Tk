@@ -365,7 +365,7 @@
 </pre></div>
 </div>
 <p>El resultado es el siguiente:</p>
-<p><img alt="Ventana Tkinter" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventana.png" /></p>
+<p><img alt="ventana" src="https://user-images.githubusercontent.com/58320351/128613754-7121acb1-4fa8-4d74-a703-561d961e0652.png" /></p>
 <p>Una aplicación solo puede tener una <code class="docutils literal notranslate"><span class="pre">Tk</span></code>, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la <code class="docutils literal notranslate"><span class="pre">Tk</span></code> cerraría la GUI. Existen otro tipo de ventanas llamadas <code class="docutils literal notranslate"><span class="pre">Toplevel</span></code> que son ventanas de la aplicación, la diferencia con la <code class="docutils literal notranslate"><span class="pre">Tk</span></code> es que al cerrar una ventana <code class="docutils literal notranslate"><span class="pre">Toplevel</span></code> destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. Es importante resaltar que, además de la <code class="docutils literal notranslate"><span class="pre">Tk</span></code> y las ventanas <code class="docutils literal notranslate"><span class="pre">Toplevel</span></code>, existen algunas ventanas predeterminadas como las de <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/filedialog.md">Filedialog</a> o las de <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/messagebox/messagebox.md">Messagebox</a> y otros widgets como los <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/frame.md">Frames</a> y <a class="reference external" href="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/labelframe/labelframe.md">Labelframes</a> que sirven como contenedores de otros widgets.</p>
 <p>Una vez se tiene la ventana principal, lo siguiente es agregar los botones, entradas, labels y demás widgets que necesitemos. Para esto, Tkinter cuenta con tres mecanismos para gestionar la geometría de los widgets de nuestra GUI: los métodos <code class="docutils literal notranslate"><span class="pre">pack()</span></code>, <code class="docutils literal notranslate"><span class="pre">grid()</span></code> y <code class="docutils literal notranslate"><span class="pre">place()</span></code>.</p>
 <div class="section" id="pack">
@@ -387,7 +387,7 @@
 <span class="n">ventana</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="ventana botones pack" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanapack.png" /></p>
+<p><img alt="ventanapack" src="https://user-images.githubusercontent.com/58320351/128613760-e41cec97-9c6c-438e-81d5-5a7886e6af01.png" /></p>
 <p>Se puede observar que se respeta el orden en que se “empacan” los widgets. Esto se observa claramente con los botones 1 y 2, los cuales tienen <code class="docutils literal notranslate"><span class="pre">side</span> <span class="pre">=</span> <span class="pre">&quot;top&quot;</span></code>, como el botón 1 está primero, se respeta y queda sobre el botón 2 que después queda sobre los widgets que se ubiquen después. Es un método muy útil cuando se va a crear una aplicación con pocos widgets.</p>
 <p><a class="reference external" href="https://www.tutorialspoint.com/python/tk_pack.htm">Aquí</a> para ver más sobre el método pack.</p>
 </div>
@@ -410,7 +410,7 @@
 <span class="n">ventana</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="ventana botones grid" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanagrid.png" /></p>
+<p><img alt="ventanagrid" src="https://user-images.githubusercontent.com/58320351/128613762-43fd36e9-fc90-4b16-92e2-1537ae146f05.png" /></p>
 <p>Este método permite ubicar los widgets indicando la fila y la columna. Por defecto, el tamaño de las filas y columnas está dado por los widgets que estén ubicados en ellas, pero es posible cambiar el tamaño y combinar filas o columnas. Este método es muy útil cuando las aplicaciones contienen muchos widgets.</p>
 <p><a class="reference external" href="https://www.tutorialspoint.com/python/tk_grid.htm">Aquí</a> para ver más sobre el método grid.</p>
 </div>
@@ -433,7 +433,7 @@
 <span class="n">ventana</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="ventana botones place" src="https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventanaplace.png" /></p>
+<p><img alt="ventanaplace" src="https://user-images.githubusercontent.com/58320351/128613764-209a56e3-cf08-4292-b955-f96c99c6ae66.png" /></p>
 <p>Este método tiene la ventaja de que permite ubicar exactamente donde se quiere los widgets, pero hay que tener cuidado con su tamaño. Cuando son muchos widgets se vuelve problemático ubicarlos todos.</p>
 <p><a class="reference external" href="https://www.tutorialspoint.com/python/tk_place.htm">Aquí</a> para ver más sobre el método place.</p>
 <div class="toctree-wrapper compound">
