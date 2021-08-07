@@ -26,7 +26,7 @@
   - file: "content/text"
 - file: content/otros
   sections:
+  - file: "content/matplotlib"
   - file: "content/3D"
   - file: "content/eventos"
-  - file: "content/matplotlib"
   - file: "content/proyecto"
