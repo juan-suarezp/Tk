@@ -116,7 +116,7 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana matplotlib](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/matplotlib/ventanamatplotlib.png)
+![ventanamatplotlib](https://user-images.githubusercontent.com/58320351/128614371-dc0602a4-1d80-4a7e-a5d7-a65170a86d76.png)
 
 La ventana permite ingresar la amplitud en V, la frecuencia en Hz y la fase inicial en Rad. Al llenar todos los campos, con el botón graficar se actualiza la gráfica con los parámetros actuales ingresados.
 
