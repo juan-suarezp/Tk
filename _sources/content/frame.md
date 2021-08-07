@@ -40,7 +40,7 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana frame](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/frame/ventanaframe.png)
+![ventanaframe](https://user-images.githubusercontent.com/58320351/128614323-3939bf06-7ea4-4240-964c-7060b939059f.png)
 
 En este ejemplo se crea la `tk.Tk` y se agregan dos frames indicando el widget que los va a contener, dentro del primer frame se agregan tres botones y en el segundo frame se agrega solo uno. Lo más importante en este ejemplo es que al definir los botones se indica que van a estar en el frame y no en la `tk.Tk`. También, se debe resaltar que los tres mecanismos para gestionar la geometría de los widgets funcionan para ubicarlos dentro de los frames.
 
