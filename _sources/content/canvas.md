@@ -38,17 +38,17 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana canvas](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/canvas/ventanacanvas.png)
+![ventanacanvas](https://user-images.githubusercontent.com/58320351/128614213-802fb5d2-31c8-4988-993f-dff209e4f7dc.png)
 
 Los botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) `Arco` y `Línea` están conectados respectivamente con las funciones `accionArc` y `accionLine`. Al presionar el botón `Arco` resulta:
 
-![canvasarco](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/canvas/arcocanvas.png)
+![arcocanvas](https://user-images.githubusercontent.com/58320351/128614214-bf787fbf-9246-4a6d-9e06-adfeed070682.png)
 
 `canvas.create_arc` dibuja un arco, se debe indicar las coordenadas y es posible indicar el ángulo inicial, el ángulo final y el color del arco.
 
 Luego se presiona el botón línea:
 
-![canvaslinea](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/canvas/lineacanvas.png)
+![lineacanvas](https://user-images.githubusercontent.com/58320351/128614216-625b7e7f-b29a-445b-87cd-bc0c5f9a877f.png)
 
 `canvas.create_line` dibuja una línea, se debe indicar las coordenas de los dos puntos y es posible indicar el color.
 
