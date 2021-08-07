@@ -66,10 +66,10 @@ if __name__ == '__main__':
 ```
 El resultado es el siguiente:
 
-![ventana filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/ventanafiledialog.png)
+![ventanafiledialog](https://user-images.githubusercontent.com/58320351/128614311-8ced5707-f186-4bfd-9172-f8e84ea15caf.png)
 
 En este ejemplo se crea una clase para la interfaz, en la cual se define un menú (ver [Tkinter Menu](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/menu/menu.md)) con una sola opción que está conectada al método `Abrir` y un text (ver [Tkinter Text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/text.md)) en el que se mostrará la ruta y el texto que contiene el archivo seleccionado. Por ejemplo, si se selecciona el archivo .py del ejemplo el resultado es el siguiente:
 
-![funcion filedialog](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/filedialog/funcionfiledialog.png)
+![funcionfiledialog](https://user-images.githubusercontent.com/58320351/128614312-97318e94-5aad-45d0-92bd-acb3575e9d09.png)
 
 El método `Abrir` abre la ventana que permite seleccionar el archivo. Esta ventana se abre con `tk.filedialog.askopenfilename` y se indica las opciones de tipo de archivos a buscar con `filetypes`, en el ejemplo se pueden buscar archivos .py o cualquier tipo de archivos. Estas opciones se agregan como se observa en la lista `ftypes`. Luego, se valida que se haya seleccionado un archivo, de ser así, se muestra la ruta en el text y por medio del método `Leer` se lee y retorna el texto del archivo para finalmente mostrarlo también en el text.
