@@ -1,5 +1,5 @@
 ## Otros ejemplos
-- [Matplotlib](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/matplotlib/matplotlib.md)
-- [Eventos](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/eventos/eventos.md)
-- [Ejemplo Proyecto](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/proyecto/proyecto.md)
-- [Ejemplo Figura 3D](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/otros%20ejemplos/3D/3D.md)
+- [Matplotlib](https://juan-suarezp.github.io/Tk/content/matplotlib.html)
+- [Eventos](https://juan-suarezp.github.io/Tk/content/eventos.html)
+- [Ejemplo Proyecto](https://juan-suarezp.github.io/Tk/content/proyecto.html)
+- [Ejemplo Figura 3D](https://juan-suarezp.github.io/Tk/content/3D.html)
