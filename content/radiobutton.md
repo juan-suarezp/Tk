@@ -42,11 +42,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana radiobutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/radiobutton/ventanaradiobutton.png)
+![ventanaradiobutton](https://user-images.githubusercontent.com/58320351/128614532-0829b520-f395-40c0-9120-75e6fbc97cc7.png)
 
 El botón está conectado a la función `accion` (Ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), al igual que los radiobutton al cambiar de estado. La función muestra en la terminal la opción que está seleccionada como se observa a continuación:
 
-![funcion radiobutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/radiobutton/funcionradiobutton.png)
+![funcionradiobutton](https://user-images.githubusercontent.com/58320351/128614534-914819fd-2fce-449e-8ced-f5bb4e19ef11.png)
 
 Después de crear la `tk.Tk` se define la función y los radiobutton. Para los radiobutton además de definir el widget que los va a contener, en este caso `ventana`, se definen las opciones `variable`, `value`, `text`, `command`, `height` y `width`. Las dos últimas definen el tamaño del radiobutton, `variable` guarda el valor `value` del  radiobutton seleccionado, `text` es el texto que acompaña el botón de activación y `command` permite llamar una función cuando cambia el estado del radiobutton.
 
