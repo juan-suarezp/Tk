@@ -1,5 +1,5 @@
 # Tkinter Message
-Permite mostrar texto, es posible cambiarlo pero no directamente por el usuario. El widget message es similar al label (ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)), solo que el message ajusta el texto a sus dimensiones.
+Permite mostrar texto, es posible cambiarlo pero no directamente por el usuario. El widget message es similar al label (ver [Tkinter Label](https://juan-suarezp.github.io/Tk/content/label.html)), solo que el message ajusta el texto a sus dimensiones.
 
 ## Ejemplo
 
@@ -40,7 +40,7 @@ el resultado es el siguiente:
 
 ![ventanamessage](https://user-images.githubusercontent.com/58320351/128614435-313a5166-a130-4076-bcfe-6e461e685efd.png)
 
-En la `tk.Tk` se agregan dos messages y un botón. Uno de los message tiene un mensaje inicial que no tiene posibilidad de cambio, mientras el otro message cambia cada vez que se presiona el botón. La función `acción` está conectada con el botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) y al ser ejecutada realiza el cambio en el message como se observa a continuación:
+En la `tk.Tk` se agregan dos messages y un botón. Uno de los message tiene un mensaje inicial que no tiene posibilidad de cambio, mientras el otro message cambia cada vez que se presiona el botón. La función `acción` está conectada con el botón (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) y al ser ejecutada realiza el cambio en el message como se observa a continuación:
 
 ![funcionmessage](https://user-images.githubusercontent.com/58320351/128614438-488db0be-f35d-4aa4-9b7c-66513f4c4067.png)
 
