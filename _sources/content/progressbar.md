@@ -29,10 +29,10 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana progressbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/progressbar/ventanaprogressbar.png)
+![ventanaprogressbar](https://user-images.githubusercontent.com/58320351/128614498-838331dc-f9c8-4502-9c23-b7481f1be48b.png)
 
 El botón (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) está conectado con la función `aumentar`, la cual aumenta el 20% de la barra de progreso cada vez que es llamada. Esta es una manera simple de ver el funcionamiento del widget progressbar.
 
-![funcion progressbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/progressbar/funcionprogressbar.png)
+![funcionprogressbar](https://user-images.githubusercontent.com/58320351/128614505-6016a017-dc35-442c-aafd-cf2601d157b9.png)
 
 Primero se define la `tk.Tk`, luego se define la progressbar indicando su orientación. Al final se define la función y el botón.
