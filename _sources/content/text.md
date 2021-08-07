@@ -53,7 +53,7 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana text](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/text/ventanatext.png)
+![ventanatext](https://user-images.githubusercontent.com/58320351/128614602-01b24da7-8cd7-4ce3-907f-55d3aceb3e60.png)
 
 En este ejemplo hay dos text, text1 y 2. También hay una barra de desplazamiento (ver [Tkinter Scrollbar](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/scrollbar/scrollbar.md)) para el text2.
 
