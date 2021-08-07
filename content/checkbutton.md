@@ -1,5 +1,5 @@
 # Tkinter Checkbutton
-Permite mostrar opciones como un botón de activación, el botón puede ir acompañado de texto o una imagen. Se usa cuando se puede seleccionar una o varias opciones a diferencia de [Tkinter Radiobutton](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/radiobutton/radiobutton.md).
+Permite mostrar opciones como un botón de activación, el botón puede ir acompañado de texto o una imagen. Se usa cuando se puede seleccionar una o varias opciones a diferencia de [Tkinter Radiobutton](https://juan-suarezp.github.io/Tk/content/radiobutton.html).
 
 ## Ejemplo
 
@@ -48,7 +48,7 @@ El resultado es el siguiente:
 
 ![ventanacheckbutton](https://user-images.githubusercontent.com/58320351/128614230-78fc995a-1268-4f10-88a0-d24836a3c4a4.png)
 
-El botón está conectado a la función `accion` (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), al igual que los checkbutton al cambiar de estado. La función muestra en la terminal el estado actual de los dos checkbutton como se observa a continuación:
+El botón está conectado a la función `accion` (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)), al igual que los checkbutton al cambiar de estado. La función muestra en la terminal el estado actual de los dos checkbutton como se observa a continuación:
 
 ![funcioncheckbutton](https://user-images.githubusercontent.com/58320351/128614232-3ce1502f-e4cb-41b4-bc05-1416f545e194.png)
 
