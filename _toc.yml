@@ -25,6 +25,7 @@
   - file: "content/spinbox"
   - file: "content/text"
 - file: content/otros
+  sections:
   - file: "content/3D"
   - file: "content/eventos"
   - file: "content/matplotlib"
