@@ -43,11 +43,11 @@ ventana.mainloop()
 ```
 El resultado es el siguiente:
 
-![ventana entry](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/ventanaentry.png)
+![ventanaentry](https://user-images.githubusercontent.com/58320351/128614283-bf54be18-b56f-42ce-85a4-0d23de78be9c.png)
 
 El botón está conectado a la función `accion` (Ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)), la cual comprueba si el texto en el label (Ver [Tkinter Label](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/label/label.md)) es igual al texto en el entry, mostrando en la terminal "correcto" o "incorrecto".
 
-![funcion entry](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/entry/funcionentry.png)
+![funcionentry](https://user-images.githubusercontent.com/58320351/128614288-a23ba426-1cb2-4814-a638-d8174bc1b1c3.png)
 
 Primero se crea la `tk.Tk`, luego se define el label, el entry, la función y el botón. Para el entry se usan las opciones `textvariable`, `bd` y `width`. `textvariable` es para indicar la variable que guarda el texto que contiene el entry, `bd` crea un borde en el widget y `width` define el ancho.
 
