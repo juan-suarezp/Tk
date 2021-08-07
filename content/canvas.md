@@ -40,7 +40,7 @@ El resultado es el siguiente:
 
 ![ventanacanvas](https://user-images.githubusercontent.com/58320351/128614213-802fb5d2-31c8-4988-993f-dff209e4f7dc.png)
 
-Los botones (ver [Tkinter Button](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/widgets/button/button.md)) `Arco` y `Línea` están conectados respectivamente con las funciones `accionArc` y `accionLine`. Al presionar el botón `Arco` resulta:
+Los botones (ver [Tkinter Button](https://juan-suarezp.github.io/Tk/content/button.html)) `Arco` y `Línea` están conectados respectivamente con las funciones `accionArc` y `accionLine`. Al presionar el botón `Arco` resulta:
 
 ![arcocanvas](https://user-images.githubusercontent.com/58320351/128614214-bf787fbf-9246-4a6d-9e06-adfeed070682.png)
 
