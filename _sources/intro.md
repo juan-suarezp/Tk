@@ -1,10 +1,11 @@
 # Tkinter
-```{admonition} Departamento de Ingeniería Eléctrica - Facultad de Ingeniería - Universidad de Antioquia
+````{admonition} Departamento de Ingeniería Eléctrica - Facultad de Ingeniería - Universidad de Antioquia
 Este repositorio es una guía para los estudiantes de ingeniería eléctrica que están cursando algoritmos y programación/computación numérica en la Universidad de Antioquia.
-```
+
 ```{note}
 Versión de Python: 3.8
 ```
+````
 
 Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo [PyQt](https://github.com/juan-suarezp/PythonPyQtTutorial), sean más potentes que Tkinter.
 
