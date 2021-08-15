@@ -7,7 +7,7 @@ Versión de Python: 3.8
 ```
 ````
 
-Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo [PyQt](https://github.com/juan-suarezp/PythonPyQtTutorial), sean más potentes que Tkinter.
+Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo [PyQt](https://juan-suarezp.github.io/PyQt), sean más potentes que Tkinter.
 
 ## GUI con Tkinter
 El primer paso para crear una GUI es crear la ventana principal (`Tk`), como se muestra en el siguiente código:
