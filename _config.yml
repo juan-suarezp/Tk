@@ -11,7 +11,7 @@ logo: logo.jpg
 
 repository:
    url: https://github.com/juan-suarezp/Tk
-   branch: master
+   branch: main
 
 launch_buttons:
   binderhub_url: ""
